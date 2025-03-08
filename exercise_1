@@ -1,0 +1,16 @@
+>>> type(True)
+<class 'bool'>
+>>> type(None)
+<class 'NoneType'>
+>>> type(1234)
+<class 'int'>
+>>> type(12.5)
+<class 'float'>
+>>> type('mamad')
+<class 'str'>
+>>> type(False)
+<class 'bool'>
+>>> type(float (4))
+<class 'float'>
+>>> type(int (3.1))
+<class 'int'>
