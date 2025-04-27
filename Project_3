@@ -1,0 +1,28 @@
+import math as m
+def tamrin_1(x,y):
+    return((x // y) * m.log(x // y))
+print("hasel",tamrin_1(50,2))
+
+////////////////////////
+
+def tamrin_2(x):
+    return(1 // 1+m.exp(-x))
+print("hasel",tamrin_2(int(input("add num"))))
+
+////////////////////////
+
+def tamrin_3(x):
+    return(m.exp(x) // m.exp(x**2))
+print("hasel",tamrin_3(int(input("add num"))))
+
+////////////////////////
+
+def tamrin_4(x,y,y1):
+    return((1 // x) * (y-y1))
+print("hasel",tamrin_4(1,50,2))
+
+////////////////////////
+
+def tamrin_5(x,M):
+    return(m.sqrt( x * m.log(M)))
+print("hasel",tamrin_5(10,2))
