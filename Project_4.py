@@ -4,7 +4,7 @@ def my_function(x,z):
     if 0 <= z <= 1:
         return z
     else:
-        return 1 / abs(x) + m.exp(-z)
+        return 1 / m.abs(x) + m.exp(-z)
 
 print("result=", my_function(1,2))
 
