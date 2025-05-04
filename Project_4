@@ -8,7 +8,7 @@ def my_function(x,z):
 
 print("result=", my_function(1,2))
 
-////////////////////
+/////////////////////
 
 def countup(x,y):
     print(x)
