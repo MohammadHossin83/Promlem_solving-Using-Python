@@ -6,12 +6,14 @@ def check_pass(score):
 
 students = []
 
-students.append({"name": "ali", "score": 17})
-students.append({"name": "mohammad", "score": 8})
-students.append({"name": "reza", "score": 14})
+count = int(input("چند دانش‌آموز دارید؟ "))
 
-students.remove({"name": "mohammad", "score": 8})
+for i in range(count):
+    name = input("نام دانش‌آموز: ")
+    score = float(input("نمره‌ی دانش‌آموز: "))
+    students.append({"name": name, "score": score})
 
+print("\n اطلاعات دانش‌آموزان:")
 for student in students:
     print("نام:", student["name"])
     print("نمره:", student["score"])
@@ -19,10 +21,14 @@ for student in students:
     print("-" * 15)
 
 scores = [s["score"] for s in students]
-average = sum(scores) / len(scores)
-print("میانگین نمرات:", average)
 
-if average >= 10:
-    print("کلاس در وضعیت خوبی است.")
+if len(scores) > 0:
+    average = sum(scores) / len(scores)
+    print("میانگین نمرات:", average)
+
+    if average >= 10:
+        print("کلاس در وضعیت خوبی است.")
+    else:
+        print("کلاس نیاز به تلاش بیشتر دارد.")
 else:
-    print("کلاس نیاز به تلاش بیشتر دارد.")
+    print("هیچ دانش‌آموزی وارد نشده است.")
