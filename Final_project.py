@@ -9,7 +9,7 @@ students = []
 count = int(input("چند دانش‌آموز دارید؟ "))
 
 inputs = [""] * count
-for _ in inputs:
+for i in inputs:
     name = input("نام دانش‌آموز: ")
     score = float(input("نمره‌ی دانش‌آموز: "))
     students.append({"name": name, "score": score})
